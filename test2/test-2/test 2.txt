@@ -1,0 +1,164 @@
+1. Method overloading : method overloading is a concept of having a same methods with a different variables.
+example : class Watchman{
+
+String  name;
+int age;
+
+WatchMan(String name)
+{
+	System.out.println("invoking main in String name");
+	this.name = name;
+}
+WatchMan(int age)
+{
+System.out.priintln("invoking main in int age");
+this.age = age;
+}
+}
+ class WatchmanRunner{
+public static void main(String[] args)
+{
+
+System.out.println("invoking main in WatchmanRunner");
+{
+
+   Watchman watchman=new Watchman("ram");
+	System.out.println("============================");
+		
+	Watchman watchman=new watchman(30);		
+ }
+ }
+
+2.variables : userdefined variable, local variabe and static variable.
+example :
+class Soap{
+public static void main(String[] args)
+{
+System.out.println("invoking main in class");
+{
+String name = "alex";
+int age = 5;
+}}
+
+3.Heap and stack memory: HEAP is a platform and a primary memory which is used to store all the data.inside the primary memory there will be a chunks they are,
+ metaspace,constant pool, instance meomory
+Stack memory is memory which is created inside the primary memory, it will be created when the metaspace find the method.Stack memory creates a stack
+ frame which store line number,local variable and the varname.
+4.ring name;
+int price;
+String name;
+	
+Carrom()
+{
+ System.out.println("Invoking constructor in Carrom");
+}
+	
+Carrom(int price)
+{
+	System.out.println("Invoking int constructor in Carrom");
+	System.out.println("Price of Carrom Board :"+price);
+	this.price=price;
+}
+	
+Carrom(int price,String name)
+{
+	System.out.println("Invoking int,String constructor in Carrom");
+	System.out.println("Price of Carrom Board :"+price);
+	System.out.println("Name of Carrom Board :"+name);
+	this.price=price;
+	this.name=name;
+}
+
+5.
+class Soil{
+	
+ static String color;
+ static float price;
+ int quantity;
+ String texture;
+ 
+ Soil()
+ { 
+  super();
+  System.out.println("Invoking const of Soil");
+ }
+ 
+ Soil(String color, float price)
+ {
+  System.out.println("Invoking const of Soil");
+  this.color=color;
+  this.price=price;
+ }
+Soil(String color, float price, int quantity, String texture)
+ {
+  System.out.println("Invoking const of Soil");
+  this.color=color;
+  this.price=price;
+  this.quantity=quantity;
+  this.texture=texture;
+  }
+ static void printstatic()
+ {
+  System.out.println("Invoking main in Soil");
+  System.out.println(color);
+  System.out.println(price);
+ }
+ 
+ void printInstance()
+ {
+  System.out.println("Invoking main in Soil");
+  System.out.println(quantity);
+  System.out.println(texture);
+ }
+}
+
+class SoilRunner{
+
+ public static void main(String[] args)
+ { 
+  Soil soil = new Soil("Light Brown", 200, 1, "Sandy");
+  Soil.printstatic();
+  soil.printInstance();
+ }
+}
+
+
+7.chaining:
+class Cup{
+
+ static String color;
+ static String shape;
+ 
+ Cup()
+ {
+  System.out.println("Invoking const in Cup");
+ }
+ 
+ Cup(String color, String shape)
+ {
+  System.out.println("Invoking String, String const in Cup");
+  this.color=color;
+  this.shape=shape;
+  }
+  static void printstatic()
+  {
+   System.out.println("Invoking main in Cup");
+   System.out.println(color);
+   System.out.println(shape);
+   }
+ }
+
+class CupRunner{
+
+ public static void main(String[] args)
+ {
+  Cup cup = new Candle("White", "Cylindrical");
+  Cup.printstatic();
+  cup.printInstance();
+  }
+}
+
+
+6.class Butterfly{
+static 
+
