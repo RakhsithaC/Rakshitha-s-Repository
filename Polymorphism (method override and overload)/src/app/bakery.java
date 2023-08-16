@@ -1,6 +1,6 @@
 package app;
 
-public class Bakery {
+public class bakery {
 public void bake() {
 	System.out.println("calling parent class method from no arg");
 }
